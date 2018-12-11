@@ -1,0 +1,20 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "This example creates a LUIS app using the prebuilt domain \"Note\"",
+  "main": "notes.js",
+  "scripts": {
+    "start": "node notes.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "requestretry": "^3.1.0"
+  }
+}

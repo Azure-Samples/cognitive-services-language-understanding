@@ -1,0 +1,16 @@
+{
+    "name": "example_get_querylog",
+    "version": "1.0.0",
+    "description": "Use the Microsoft LUIS Authoring API to get query log async.",
+    "main": "queryLogAsync.js",
+    "scripts": {
+        "start": "node queryLogAsync.js"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "co": "^4.6.0",
+        "request": "^2.83.0",
+        "requestretry": "^1.13.0",
+        "yargs": "^11.0.0"
+    }
+}
