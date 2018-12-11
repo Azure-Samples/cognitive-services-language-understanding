@@ -1,4 +1,4 @@
-# LUIS Samples
+# Language Understanding (LUIS) Samples
 
 Welcome to the Language Understanding ([LUIS](https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/)) samples repository. LUIS allows your application to understand what a person wants in their own words. LUIS uses machine learning to allow developers to build applications that can receive user input in natural language and extract meaning from it.
 
@@ -70,6 +70,11 @@ Use the `Deploy to Azure` button to quickly create an Azure LUIS service. You ge
 Ask LUIS to turn on the lights in this [interactive demonstration](https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/).
 
 Tell the [Contoso Health bot](https://healthbotcontainer.azurewebsites.net/) where you are injured and the bot will recommend remedies.
+
+## Intelligent Kiosk
+
+The [Intelligent Kiosk Sample](https://github.com/Microsoft/Cognitive-Samples-IntelligentKiosk) is a collection of demos showcasing workflows and experiences built on top of the Microsoft Cognitive Services. Most of the experiences are hands-free and autonomous, using the human faces in front of a web camera as the main form of input (thus the word "kiosk" in the name).
+
 
 ## References
 * [LUIS Docs](https://docs.microsoft.com/azure/cognitive-services/LUIS/)
