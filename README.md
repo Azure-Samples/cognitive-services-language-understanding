@@ -280,6 +280,8 @@ This items are used to assign a LUIS resource key to an application without usin
  * /subscriptions/{subscriptionKey}  [[delete](https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/operations/5890b47c39e2bb052c5b9c4c)]
 
 
+Route map generated with [swagger-tools](https://github.com/diberry/swagger-tools/blob/master/swagger-to-route-with-verbs-linked-to-apim-docs.js).
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
