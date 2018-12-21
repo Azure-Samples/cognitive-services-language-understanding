@@ -1,0 +1,83 @@
+{
+  "luis_schema_version": "3.1.0",
+  "versionId": "regex",
+  "name": "Human resources",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "FindForm"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [
+    {
+      "name": "HRF-number",
+      "regexPattern": "hrf-[0-9]{6}",
+      "roles": []
+    }
+  ],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "author of hrf-546234?",
+      "intent": "FindForm",
+      "entities": []
+    },
+    {
+      "text": "did john smith update hrf-234639 last week?",
+      "intent": "FindForm",
+      "entities": []
+    },
+    {
+      "text": "how many people need to sign off on hrf-345678?",
+      "intent": "FindForm",
+      "entities": []
+    },
+    {
+      "text": "how many version of hrf-345123 are there?",
+      "intent": "FindForm",
+      "entities": []
+    },
+    {
+      "text": "hrf-234123 date?",
+      "intent": "FindForm",
+      "entities": []
+    },
+    {
+      "text": "title of hrf-456234?",
+      "intent": "FindForm",
+      "entities": []
+    },
+    {
+      "text": "what is the url for hrf-123456?",
+      "intent": "FindForm",
+      "entities": []
+    },
+    {
+      "text": "when was hrf-456098 updated?",
+      "intent": "FindForm",
+      "entities": []
+    },
+    {
+      "text": "where is hrf-345678?",
+      "intent": "FindForm",
+      "entities": []
+    },
+    {
+      "text": "who needs to authorize form hrf-123456?",
+      "intent": "FindForm",
+      "entities": []
+    }
+  ],
+  "settings": []
+}

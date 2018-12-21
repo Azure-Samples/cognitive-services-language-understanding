@@ -1,0 +1,164 @@
+{
+  "luis_schema_version": "3.1.0",
+  "versionId": "hierarchic",
+  "name": "Human resources",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "MoveEmployeeToCity"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Location",
+      "children": [
+        "Destination",
+        "Origin"
+      ],
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "carl chamerlin from san francisco to redmond",
+      "intent": "MoveEmployeeToCity",
+      "entities": [
+        {
+          "entity": "Location::Origin",
+          "startPos": 20,
+          "endPos": 32
+        },
+        {
+          "entity": "Location::Destination",
+          "startPos": 37,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "move debra doughtery to tulsa from dallas",
+      "intent": "MoveEmployeeToCity",
+      "entities": [
+        {
+          "entity": "Location::Origin",
+          "startPos": 24,
+          "endPos": 28
+        },
+        {
+          "entity": "Location::Destination",
+          "startPos": 35,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "move john w. smith leaving seattle headed to dallas",
+      "intent": "MoveEmployeeToCity",
+      "entities": [
+        {
+          "entity": "Location::Origin",
+          "startPos": 27,
+          "endPos": 33
+        },
+        {
+          "entity": "Location::Destination",
+          "startPos": 45,
+          "endPos": 50
+        }
+      ]
+    },
+    {
+      "text": "mv jill jones leaving cairo headed to tampa",
+      "intent": "MoveEmployeeToCity",
+      "entities": [
+        {
+          "entity": "Location::Origin",
+          "startPos": 22,
+          "endPos": 33
+        },
+        {
+          "entity": "Location::Destination",
+          "startPos": 38,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "place john jackson away from tampa, coming to atlanta",
+      "intent": "MoveEmployeeToCity",
+      "entities": [
+        {
+          "entity": "Location::Origin",
+          "startPos": 29,
+          "endPos": 33
+        },
+        {
+          "entity": "Location::Destination",
+          "startPos": 46,
+          "endPos": 52
+        }
+      ]
+    },
+    {
+      "text": "shift alice anderson to oakland from redmond",
+      "intent": "MoveEmployeeToCity",
+      "entities": [
+        {
+          "entity": "Location::Origin",
+          "startPos": 24,
+          "endPos": 30
+        },
+        {
+          "entity": "Location::Destination",
+          "startPos": 37,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "transfer jill jones from seattle to cairo",
+      "intent": "MoveEmployeeToCity",
+      "entities": [
+        {
+          "entity": "Location::Origin",
+          "startPos": 25,
+          "endPos": 31
+        },
+        {
+          "entity": "Location::Destination",
+          "startPos": 36,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "transfer steve standish from san diego toward bellevue",
+      "intent": "MoveEmployeeToCity",
+      "entities": [
+        {
+          "entity": "Location::Origin",
+          "startPos": 29,
+          "endPos": 37
+        },
+        {
+          "entity": "Location::Destination",
+          "startPos": 46,
+          "endPos": 53
+        }
+      ]
+    }
+  ],
+  "settings": []
+}

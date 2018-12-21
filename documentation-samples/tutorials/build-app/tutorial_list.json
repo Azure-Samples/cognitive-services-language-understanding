@@ -1,0 +1,136 @@
+{
+  "luis_schema_version": "3.1.0",
+  "versionId": "list",
+  "name": "Human resources",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "TransferEmployeeToDepartment"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "Department",
+      "subLists": [
+        {
+          "canonicalForm": "Accounting",
+          "list": [
+            "acct",
+            "accting",
+            "3456"
+          ]
+        },
+        {
+          "canonicalForm": "Development Operations",
+          "list": [
+            "Devops",
+            "4949"
+          ]
+        },
+        {
+          "canonicalForm": "Engineering",
+          "list": [
+            "eng",
+            "enging",
+            "4567"
+          ]
+        },
+        {
+          "canonicalForm": "Finance",
+          "list": [
+            "fin",
+            "2020"
+          ]
+        },
+        {
+          "canonicalForm": "Information Technology",
+          "list": [
+            "2323",
+            "IT"
+          ]
+        },
+        {
+          "canonicalForm": "Inside Sales",
+          "list": [
+            "isale",
+            "insale",
+            "1414"
+          ]
+        },
+        {
+          "canonicalForm": "Research and Development",
+          "list": [
+            "R&D",
+            "1234"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "carl chamerlin to finance",
+      "intent": "TransferEmployeeToDepartment",
+      "entities": []
+    },
+    {
+      "text": "dept 1234 has a new member named bill bradstreet",
+      "intent": "TransferEmployeeToDepartment",
+      "entities": []
+    },
+    {
+      "text": "move debra doughtery to inside sales",
+      "intent": "TransferEmployeeToDepartment",
+      "entities": []
+    },
+    {
+      "text": "move john w. smith to the accounting department",
+      "intent": "TransferEmployeeToDepartment",
+      "entities": []
+    },
+    {
+      "text": "mv jill jones to it",
+      "intent": "TransferEmployeeToDepartment",
+      "entities": []
+    },
+    {
+      "text": "place john jackson in engineering",
+      "intent": "TransferEmployeeToDepartment",
+      "entities": []
+    },
+    {
+      "text": "shift alice anderson to devops",
+      "intent": "TransferEmployeeToDepartment",
+      "entities": []
+    },
+    {
+      "text": "steve standish to 1234",
+      "intent": "TransferEmployeeToDepartment",
+      "entities": []
+    },
+    {
+      "text": "tanner thompson to 3456",
+      "intent": "TransferEmployeeToDepartment",
+      "entities": []
+    },
+    {
+      "text": "transfer jill jones from to r&d",
+      "intent": "TransferEmployeeToDepartment",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
