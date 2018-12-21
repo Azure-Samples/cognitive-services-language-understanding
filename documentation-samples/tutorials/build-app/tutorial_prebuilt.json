@@ -1,16 +1,10 @@
 {
   "luis_schema_version": "3.1.0",
   "versionId": "prebuilt",
-  "name": "tutorials 12-13",
+  "name": "Human resources",
   "desc": "",
   "culture": "en-us",
   "intents": [
-    {
-      "name": "ApplyForJob"
-    },
-    {
-      "name": "GetJobInformation"
-    },
     {
       "name": "None"
     },
@@ -80,21 +74,6 @@
       "entities": []
     },
     {
-      "text": "any new jobs posted today?",
-      "intent": "GetJobInformation",
-      "entities": []
-    },
-    {
-      "text": "are there any new positions in the seattle office?",
-      "intent": "GetJobInformation",
-      "entities": []
-    },
-    {
-      "text": "are there any remote worker or telecommute jobs open for engineers?",
-      "intent": "GetJobInformation",
-      "entities": []
-    },
-    {
       "text": "barking dogs are annoying",
       "intent": "None",
       "entities": []
@@ -155,11 +134,6 @@
       "entities": []
     },
     {
-      "text": "fill out application for job 123456",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
       "text": "good i am confirming",
       "intent": "Utilities.Confirm",
       "entities": []
@@ -190,16 +164,6 @@
       "entities": []
     },
     {
-      "text": "here is my c.v. for position 654321",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
-      "text": "here is my resume for the part-time receptionist post",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
       "text": "i don ' t want that . go back home",
       "intent": "Utilities.Stop",
       "entities": []
@@ -215,11 +179,6 @@
       "entities": []
     },
     {
-      "text": "i want to apply for the new accounting job.",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
       "text": "i want to cancel",
       "intent": "Utilities.Cancel",
       "entities": []
@@ -230,56 +189,6 @@
       "entities": []
     },
     {
-      "text": "i'm applying for the art desk job with this paperwork.",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
-      "text": "i'm applying for the summer college internship in research and development in san diego",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
-      "text": "i'm looking for a co-working situation in the tampa office.",
-      "intent": "GetJobInformation",
-      "entities": []
-    },
-    {
-      "text": "i'm requesting to submit my resume to the temporary position in the cafeteria.",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
-      "text": "i'm submitting my resume for the new autocar team in columbus, oh",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
-      "text": "is there an internship in the san francisco office?",
-      "intent": "GetJobInformation",
-      "entities": []
-    },
-    {
-      "text": "is there any part-time work for people in college?",
-      "intent": "GetJobInformation",
-      "entities": []
-    },
-    {
-      "text": "is there any work with databases?",
-      "intent": "GetJobInformation",
-      "entities": []
-    },
-    {
-      "text": "job 456789 accounting internship paperwork is here",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
-      "text": "job 567890 and my paperwork",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
       "text": "let ' s restart",
       "intent": "Utilities.StartOver",
       "entities": []
@@ -287,31 +196,6 @@
     {
       "text": "let me start it again from scratch",
       "intent": "Utilities.StartOver",
-      "entities": []
-    },
-    {
-      "text": "looking for a job in new york city for bilinguial speakers.",
-      "intent": "GetJobInformation",
-      "entities": []
-    },
-    {
-      "text": "looking for a new situation with responsibilities in accounting",
-      "intent": "GetJobInformation",
-      "entities": []
-    },
-    {
-      "text": "my papers for the tulsa accounting internship are attached.",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
-      "text": "my paperwork for the holiday delivery position",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
-      "text": "new jobs?",
-      "intent": "GetJobInformation",
       "entities": []
     },
     {
@@ -375,11 +259,6 @@
       "entities": []
     },
     {
-      "text": "please send my resume for the new accounting job in seattle",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
       "text": "quit help",
       "intent": "Utilities.Stop",
       "entities": []
@@ -387,11 +266,6 @@
     {
       "text": "restart please",
       "intent": "Utilities.StartOver",
-      "entities": []
-    },
-    {
-      "text": "show me all the jobs for engineers that were added in the last 2 days.",
-      "intent": "GetJobInformation",
       "entities": []
     },
     {
@@ -425,43 +299,13 @@
       "entities": []
     },
     {
-      "text": "submit resume for engineering position",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
       "text": "sure i confirm",
       "intent": "Utilities.Confirm",
       "entities": []
     },
     {
-      "text": "this is my c.v. for post 234123 in tampa.",
-      "intent": "ApplyForJob",
-      "entities": []
-    },
-    {
-      "text": "today's job postings?",
-      "intent": "GetJobInformation",
-      "entities": []
-    },
-    {
       "text": "wait never mind i just told you never mind",
       "intent": "Utilities.Cancel",
-      "entities": []
-    },
-    {
-      "text": "what accounting positions are open in the london office?",
-      "intent": "GetJobInformation",
-      "entities": []
-    },
-    {
-      "text": "what positions are available for senior engineers?",
-      "intent": "GetJobInformation",
-      "entities": []
-    },
-    {
-      "text": "where is the job listings",
-      "intent": "GetJobInformation",
       "entities": []
     },
     {
