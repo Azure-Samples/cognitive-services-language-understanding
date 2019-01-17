@@ -57,7 +57,7 @@ var addUtterance = async (config) => {
 
         let results = await utterancePromise;
 
-        console.log(results);
+        console.log(JSON.stringify(results));
 
     } catch (err) {
         console.log(`Error adding utterance:  ${err.message} `);
@@ -91,7 +91,7 @@ var train = async (config) => {
         });
 
         let results = await trainingPromise;
-        console.log(results);
+        console.log(JSON.stringify(results));
         
     } catch (err) {
         console.log(`Error in Training:  ${err.message} `);
