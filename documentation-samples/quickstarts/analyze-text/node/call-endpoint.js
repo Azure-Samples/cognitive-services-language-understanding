@@ -49,7 +49,7 @@ function getLuisIntent(utterance) {
                 console.log(`Query: ${data.query}`);
                 console.log(`Top Intent: ${data.topScoringIntent.intent}`);
                 console.log('Intents:');
-                console.log(data.intents);
+                console.log(JSON.stringify(data.intents));
             }
         });
 }
