@@ -2,4 +2,4 @@
 
 | Quickstart | Programming Language |
 |--|--|
-| Get runtime prediction| [C#](./c#/UsePredictionRuntime/)|
+| Get runtime prediction| [C#](./c%23/UsePredictionRuntime/)|
