@@ -37,9 +37,6 @@ namespace UsePredictionRuntime
             var luisClient = new LUISRuntimeClient(credentials, new System.Net.Http.DelegatingHandler[] { });
             luisClient.Endpoint = "https://<REPLACE-WITH-YOUR-KEY-REGION>.api.cognitive.microsoft.com";
 
-            // Create prediction client
-            var prediction = new Prediction(luisClient);
-
             // Set query values
 
             // public Language Understanding Home Automation app
@@ -56,6 +53,9 @@ namespace UsePredictionRuntime
             String bingSpellCheckKey = null;
             var log = false;
             System.Threading.CancellationToken cancellationToken = new System.Threading.CancellationToken();
+
+            // Create prediction client
+            var prediction = new Prediction(luisClient);
 
             // get prediction
             return await prediction.ResolveAsync(appId, query, timezoneOffset, verbose, staging, spellCheck, bingSpellCheckKey, log, cancellationToken);
