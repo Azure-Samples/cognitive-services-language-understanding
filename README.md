@@ -13,7 +13,7 @@ Use the `Deploy to Azure` button to quickly create an Azure LUIS service. You ge
 |Example| CSharp | Java | Node.js | Javascript | Python | PHP | Ruby| JSON | GO |
 | -- | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 |[Create and customize a LUIS app (Authoring)](https://github.com/Azure-Samples/cognitive-services-dotnet-sdk-samples/tree/master/LUIS/Authoring)|  ✔ | | ||||||
-|[Predict user utterances (Runtime)](https://github.com/Azure-Samples/cognitive-services-dotnet-sdk-samples/tree/master/LUIS/Runtime)|  ✔ | | ||||||
+|Predict user utterances (Runtime)|  [REST](https://github.com/Azure-Samples/cognitive-services-dotnet-sdk-samples/tree/master/LUIS/Runtime), [SDK](./documentation-samples/sdk-quickstarts/c%23/UsePredictionRuntime)|REST |REST ||REST||||REST
 |[Build app programmatically](examples/build-app-programmatically-csv) | |  |✔|||||||
 |[Upload utterances from query log](./examples/demo-upload-example-utterances/demo-Upload-utterances-from-querylog) | |  |✔|||||||
 |[Upload utterances from exported app](./examples/demo-upload-example-utterances/demo-upload-utterances-from-exported-luis-app/) | |  |✔|||||||
@@ -89,13 +89,15 @@ The [Intelligent Kiosk Sample](https://github.com/Microsoft/Cognitive-Samples-In
 
 ## SDKs 
 
-last updated Dec 15, 2018
+last updated Feb 13, 2019
 
 |Language|Package Manager|Samples|Reference Documentation|
 |--|--|--|--|
 |C#|  [NuGet - authoring](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring/)<br>[NuGet - runtime](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime/)|[Samples](https://github.com/Azure-Samples/cognitive-services-dotnet-sdk-samples/tree/master/LUIS)|[Docs](https://docs.microsoft.com/dotnet/api/overview/azure/cognitiveservices/client/languageunderstanding?view=azure-dotnet)|
 |Go|[SDK - authoring](https://github.com/Azure/azure-sdk-for-go/tree/master/services/cognitiveservices/v2.0/luis/authoring)<br>[SDK - runtime](https://github.com/Azure/azure-sdk-for-go/tree/master/services/cognitiveservices/v2.0/luis/runtime)|-|[Docs](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.0/luis/)|
 |Java|[Maven - authoring](https://search.maven.org/artifact/com.microsoft.azure.cognitiveservices/azure-cognitiveservices-luis-authoring)<br>[Maven - runtime](https://search.maven.org/artifact/com.microsoft.azure.cognitiveservices/azure-cognitiveservices-luis-runtime)|[Samples](https://github.com/Azure-Samples/cognitive-services-java-sdk-samples/tree/master/Language/LanguageUnderstanding)|[Docs](https://docs.microsoft.com/java/api/overview/azure/cognitiveservices/client/languageunderstanding?view=azure-java-stable)|
+|Javascript|[NPM - authoring](https://www.npmjs.com/package/azure-cognitiveservices-luis-authoring)<br>[NPM - runtime](https://www.npmjs.com/package/azure-cognitiveservices-luis-runtime)|[Samples](https://github.com/Azure-Samples/cognitive-services-node-sdk-samples/tree/master/Samples/luis)||
+|Python|[PIP](https://pypi.org/project/azure-cognitiveservices-language-luis/)|[Samples](https://github.com/Azure-Samples/cognitive-services-python-sdk-samples/tree/master/samples/language/luis)|[Docs](https://docs.microsoft.com/en-us/python/api/overview/azure/cognitiveservices/luis?view=azure-python)|
   
 ## Azure REST API
 * [Autorest swagger](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/cognitiveservices/data-plane/LUIS)
