@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime;
+using Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime.Models;
 
 namespace UsePredictionRuntime
 {
@@ -25,7 +28,7 @@ namespace UsePredictionRuntime
             Console.Write("done");
 
         }
-        static async System.Threading.Tasks.Task<Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime.Models.LuisResult> GetPrediction() {
+        static async Task<LuisResult> GetPrediction() {
 
             // Use Language Understanding or Cognitive Services key
             // to create authentication credentials
@@ -52,13 +55,12 @@ namespace UsePredictionRuntime
             var spellCheck = false;
             String bingSpellCheckKey = null;
             var log = false;
-            System.Threading.CancellationToken cancellationToken = new System.Threading.CancellationToken();
 
             // Create prediction client
             var prediction = new Prediction(luisClient);
 
             // get prediction
-            return await prediction.ResolveAsync(appId, query, timezoneOffset, verbose, staging, spellCheck, bingSpellCheckKey, log, cancellationToken);
+            return await prediction.ResolveAsync(appId, query, timezoneOffset, verbose, staging, spellCheck, bingSpellCheckKey, log,  CancellationToken.None);
 
         }
     }
