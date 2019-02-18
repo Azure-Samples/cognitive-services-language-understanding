@@ -18,7 +18,7 @@ namespace BuildModel
             // set parameters for app
             var resourceRegion = "westus";
             var culture = "en-us";
-            var appName = "myEnglishApp-02182019-1125am";
+            var appName = "myEnglishApp";
             var description = "app made with .Net SDK";
             var versionId = "0.1";
 
