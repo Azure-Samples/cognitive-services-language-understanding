@@ -14,7 +14,7 @@ Use the `Deploy to Azure` button to quickly create an Azure LUIS service. You ge
 | -- | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 |[Create and customize a LUIS app (Authoring)](https://github.com/Azure-Samples/cognitive-services-dotnet-sdk-samples/tree/master/LUIS/Authoring)|  ✔ | | ||||||
 |Predict user utterances (Runtime)|  [REST](https://github.com/Azure-Samples/cognitive-services-dotnet-sdk-samples/tree/master/LUIS/Runtime), [SDK](./documentation-samples/sdk-quickstarts/c%23/UsePredictionRuntime)|REST |REST ||REST||||REST
-|[Build app programmatically](examples/build-app-programmatically-csv) | |  |✔|||||||
+|Build app programmatically |[REST](examples/build-app-programmatically-csv), [SDK](./documentation-samples/sdk-quickstarts/c%23/BuildModel) |  |✔|||||||
 |[Upload utterances from query log](./examples/demo-upload-example-utterances/demo-Upload-utterances-from-querylog) | |  |✔|||||||
 |[Upload utterances from exported app](./examples/demo-upload-example-utterances/demo-upload-utterances-from-exported-luis-app/) | |  |✔|||||||
 |**[Quickstarts: Change model](./documentation-samples/quickstarts/change-model/)** | ![Docker](./media/docker-logo.png) | ![Docker](./media/docker-logo.png) | ![Docker](./media/docker-logo.png) | ![Docker](./media/docker-logo.png) | ![Docker](./media/docker-logo.png) | ![Docker](./media/docker-logo.png) | ![Docker](./media/docker-logo.png) ||![Docker](./media/docker-logo.png)|
