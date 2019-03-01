@@ -75,7 +75,9 @@ Tell the [Contoso Health bot](https://healthbotcontainer.azurewebsites.net/) whe
 
 ## Intelligent Kiosk
 
-The [Intelligent Kiosk Sample](https://github.com/Microsoft/Cognitive-Samples-IntelligentKiosk) is a collection of demos showcasing workflows and experiences built on top of the Microsoft Cognitive Services. Most of the experiences are hands-free and autonomous, using the human faces in front of a web camera as the main form of input (thus the word "kiosk" in the name).
+The open-source [Intelligent Kiosk Sample](https://github.com/Microsoft/Cognitive-Samples-IntelligentKiosk) version is a collection of apps showcasing workflows and experiences built on top of the Microsoft Cognitive Services. Most of the experiences are hands-free and autonomous, using the human faces in front of a web camera as the main form of input (thus the word "kiosk" in the name).
+
+Install the currently supported Intelligent Kiosk as a [Windows 10 app](https://aka.ms/kioskapp) and try out the various apps inside the kiosk, including apps with LUIS. 
 
 
 ## References
