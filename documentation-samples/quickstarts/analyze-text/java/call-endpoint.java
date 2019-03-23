@@ -1,9 +1,9 @@
-// This sample uses the Apache HTTP client from HTTP Components (http://hc.apache.org/httpcomponents-client-ga/)
+// This sample uses the Apache HTTP client from HTTP Components (http://hc.apache.org/downloads.cgi)
 
 // You need to add the following Apache HTTP client libraries to your project:
 // httpclient-4.5.3.jar
-// httpcore-4.4.6.jar
-// commons-logging-1.2.jar
+// httpcore-4.4.11.jar
+// commons-logging-4.0.6.jar
 
 import java.net.URI;
 import org.apache.http.HttpEntity;
@@ -35,10 +35,10 @@ public class LuisGetRequest {
             URIBuilder endpointURLbuilder = new URIBuilder("https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/" + AppId + "?");
 
             // query text
-            endpointURL.setParameter("q", "turn on the left light");
+            endpointURLbuilder.setParameter("q", "turn on the left light");
 
             // create URL from string
-            URI endpointURL = endpointURL.build();
+            URI endpointURL = endpointURLbuilder.build();
 
             // create HTTP object from URL
             HttpGet request = new HttpGet(endpointURL);
