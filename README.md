@@ -1,3 +1,17 @@
+---
+page_type: sample
+languages:
+- csharp
+- javascript
+- html
+- java
+- python
+products:
+- azure
+description: "LUIS allows your application to understand what a person wants in their own words."
+urlFragment: cognitive-services-language-understanding
+---
+
 # Language Understanding (LUIS) Samples
 
 Welcome to the Language Understanding ([LUIS](https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/)) samples repository. LUIS allows your application to understand what a person wants in their own words. LUIS uses machine learning to allow developers to build applications that can receive user input in natural language and extract meaning from it.
