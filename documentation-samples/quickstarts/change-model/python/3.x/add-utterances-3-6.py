@@ -12,8 +12,8 @@ LUIS_APP_ID      = "YOUR-APP-ID"
 # The version number of your LUIS app
 LUIS_APP_VERSION = "0.1"
 
-# Update the host if your LUIS subscription is not in the West US region
-LUIS_HOST       = "westus.api.cognitive.microsoft.com"
+# YOUR-ENDPOINT
+LUIS_HOST       = "YOUR-RESOURCE-NAME.api.cognitive.microsoft.com"
 
 # uploadFile is the file containing JSON for utterance(s) to add to the LUIS app.
 # The contents of the file must be in this format described at: https://aka.ms/add-utterance-json-format
