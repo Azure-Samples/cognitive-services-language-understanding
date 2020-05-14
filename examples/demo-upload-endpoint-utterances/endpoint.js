@@ -3,7 +3,7 @@
     This file sends utterances from the endpoint-utterances-Human-Resources.json file to the endpoint. This is useful if you want to reconstruct an app. 
 
     you need the appID, versionID, region, and endpoint key for this script. This script takes the JSON file of reviewable endpoint
-    uttances and submits them to the endpoint. 
+    utterances and submits them to the endpoint. 
 
     This script uses the retry logic in case you are using the F0 tier for Language Understand that has a limit of 5 queries per second. 
 */
