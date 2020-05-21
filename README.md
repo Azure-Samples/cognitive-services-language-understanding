@@ -41,14 +41,10 @@ Use the `Deploy to Azure` button to quickly create an Azure LUIS service. You ge
 |[App model definition - Colors](./documentation-samples/Examples-Colors/) |||||||| ✔ ||
 |[App model definition - IoT](./documentation-samples/examples-IoT) |||||||| ✔ ||
 |[Phrase lists](./examples/phrase_list) | |  ||||||✔||
-|[Bing Spell Check](./examples/bing-spell-check) | |  ||✔||||||
+|[Bing Spell Check](./examples/bing-spell-check) - v2 Prediction endpoint only | |  ||✔||||||
 |[Azure function with application insights](./examples/azure-function-application-insights-endpoint) |✔ |  ||||||||
 |[Download query log asynchronously](./examples/async-query-log/nodejs/)|||✔|||||||
 |[Get region from app ID and subscription key](./documentation-samples/find-region/)|✔||✔|||||||
-|[*Bot Integration sample - hotel finder](./bot-integration-samples/hotel-finder/) |  ✔ | | ✔ ||||||
-|[Bot Integration sample - HomeAutomation](./documentation-samples/tutorial-web-app-bot) |  ✔ | | ✔ ||||||
-|[Bot Integration sample - HomeAutomation & Application Insights](./documentation-samples/tutorial-web-app-bot-application-insights) | ✔  | | ✔ ||||||
-|Bot Integration sample - <br>Study Bot - [Csharp](https://github.com/Azure-Samples/cognitive-services-studybot-csharp), [Node](https://github.com/Azure-Samples/cognitive-services-studybot-node) | ✔  | | ✔ ||||||
 
 \* = example demonstrates complete cycle: create, train, publish, query
 
@@ -74,11 +70,6 @@ Use the `Deploy to Azure` button to quickly create an Azure LUIS service. You ge
 |[Azure function with application insights](./examples/azure-function-application-insights-endpoint) |Azure function, Application Insights |
 |[Add list entity](./documentation-samples/tutorial-list-entity/) |List entity, train, query|
 |[Download query log asynchronously](./examples/async-query-log/nodejs/)|Authoring API|
-|[Bot Integration sample - hotel finder](./bot-integration-samples/hotel-finder/) |Bot Framework SDK, Create-Train-Publish-Query |
-|[Bot Integration sample - HomeAutomation](./documentation-samples/tutorial-web-app-bot) |Web app bot |
-|[Bot Integration sample - HomeAutomation & Application Insights](./documentation-samples/tutorial-web-app-bot-application-insights) |Web app bot, Application Insights |
-|Bot Integration sample - <br>Study Bot - [Csharp](https://github.com/Azure-Samples/cognitive-services-studybot-csharp), [Node](https://github.com/Azure-Samples/cognitive-services-studybot-node) | Web app bot that integrates LUIS, QnA Maker, Bing Spell Check, and Speech Service |
-
 
 ## Interactive app
 Ask LUIS to turn on the lights in this [interactive demonstration](https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/).
@@ -91,7 +82,7 @@ Tell the [Contoso Health bot](https://healthbotcontainer.azurewebsites.net/) whe
 
 The open-source [Intelligent Kiosk Sample](https://github.com/Microsoft/Cognitive-Samples-IntelligentKiosk) version is a collection of apps showcasing workflows and experiences built on top of the Microsoft Cognitive Services. Most of the experiences are hands-free and autonomous, using the human faces in front of a web camera as the main form of input (thus the word "kiosk" in the name).
 
-Install the currently supported Intelligent Kiosk as a [Windows 10 app](https://aka.ms/kioskapp) and try out the various apps inside the kiosk, including apps with LUIS. 
+Install the currently supported Intelligent Kiosk as a [Windows 10 app](https://aka.ms/kioskapp) and try out the various apps inside the kiosk, including apps with LUIS.
 
 
 ## References
@@ -111,7 +102,7 @@ Rest API ref docs
 |V2 stable|[Prediction](https://aka.ms/luis-endpoint-apis)||
 |V2 stable|[Authoring](https://aka.ms/luis-authoring-apis)|[Routes](#authoring-routes-v2-stable)|
 
-## SDKs 
+## SDKs
 
 last updated Feb 13, 2019
 
@@ -122,7 +113,7 @@ last updated Feb 13, 2019
 |Java|[Maven - authoring](https://search.maven.org/artifact/com.microsoft.azure.cognitiveservices/azure-cognitiveservices-luis-authoring)<br>[Maven - runtime](https://search.maven.org/artifact/com.microsoft.azure.cognitiveservices/azure-cognitiveservices-luis-runtime)|[Samples](https://github.com/Azure-Samples/cognitive-services-java-sdk-samples/tree/master/Language/LanguageUnderstanding)|[Docs](https://docs.microsoft.com/java/api/overview/azure/cognitiveservices/client/languageunderstanding?view=azure-java-stable)|
 |Javascript|[NPM - authoring](https://www.npmjs.com/package/azure-cognitiveservices-luis-authoring)<br>[NPM - runtime](https://www.npmjs.com/package/azure-cognitiveservices-luis-runtime)|[Samples](https://github.com/Azure-Samples/cognitive-services-node-sdk-samples/tree/master/Samples/luis)||
 |Python|[PIP](https://pypi.org/project/azure-cognitiveservices-language-luis/)|[Samples](https://github.com/Azure-Samples/cognitive-services-python-sdk-samples/tree/master/samples/language/luis)|[Docs](https://docs.microsoft.com/en-us/python/api/overview/azure/cognitiveservices/luis?view=azure-python)|
-  
+
 ## Azure REST API
 * [Autorest swagger](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/cognitiveservices/data-plane/LUIS)
 * [Full swagger](https://westus.dev.cognitive.microsoft.com/docs/services/5890b47c39e2bb17b84a55ff/export?DocumentFormat=Swagger&ApiName=LUIS%20Programmatic%20APIs%20v2.0)
