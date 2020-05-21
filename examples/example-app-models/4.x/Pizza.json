@@ -1,0 +1,3348 @@
+{
+  "luis_schema_version": "4.0.0",
+  "versionId": "0.2",
+  "name": "hazems-pizza",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "CancelOrder"
+    },
+    {
+      "name": "Confirmation"
+    },
+    {
+      "name": "Greetings"
+    },
+    {
+      "name": "ModifyOrder"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Order",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "CrustList",
+      "subLists": [
+        {
+          "canonicalForm": "Deep Dish",
+          "list": [
+            "deep dish",
+            "deep dish crust"
+          ]
+        },
+        {
+          "canonicalForm": "Pan",
+          "list": [
+            "regular",
+            "normal",
+            "original",
+            "regular crust",
+            "normal crust",
+            "original crust"
+          ]
+        },
+        {
+          "canonicalForm": "Stuffed Crust",
+          "list": [
+            "stuffed criust",
+            "stuffed crusts"
+          ]
+        },
+        {
+          "canonicalForm": "Thin",
+          "list": [
+            "thin",
+            "skinny",
+            "thin crust",
+            "skinny crust"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "ModifierList",
+      "subLists": [
+        {
+          "canonicalForm": "Add",
+          "list": [
+            "with",
+            "with extra",
+            "extra",
+            "add",
+            "more of",
+            "needs",
+            "just",
+            "replaced with"
+          ]
+        },
+        {
+          "canonicalForm": "Remove",
+          "list": [
+            "without",
+            "substitute",
+            "no",
+            "hold",
+            "hold the",
+            "replace",
+            "instead of",
+            "with no"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "ScopeList",
+      "subLists": [
+        {
+          "canonicalForm": "Half",
+          "list": [
+            "on half",
+            "on one half",
+            "the other half",
+            "half with",
+            "on one side",
+            "one side",
+            "1/2",
+            "on the other half",
+            "other half"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "SizeList",
+      "subLists": [
+        {
+          "canonicalForm": "Extra Large",
+          "list": [
+            "XL",
+            "huge",
+            "super big",
+            "massive"
+          ]
+        },
+        {
+          "canonicalForm": "Large",
+          "list": [
+            "large"
+          ]
+        },
+        {
+          "canonicalForm": "Medium",
+          "list": [
+            "medium",
+            "regular",
+            "individual"
+          ]
+        },
+        {
+          "canonicalForm": "Party Size",
+          "list": [
+            "party size"
+          ]
+        },
+        {
+          "canonicalForm": "Small",
+          "list": [
+            "small",
+            "smallest"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "ToppingList",
+      "subLists": [
+        {
+          "canonicalForm": "Alfredo Sauce",
+          "list": [
+            "alfredo",
+            "alfredo sauce",
+            "white sauce"
+          ]
+        },
+        {
+          "canonicalForm": "Anchovies",
+          "list": [
+            "anchovie",
+            "anchovies"
+          ]
+        },
+        {
+          "canonicalForm": "Bacon",
+          "list": [
+            "bacon",
+            "bacon strips"
+          ]
+        },
+        {
+          "canonicalForm": "Basil",
+          "list": [
+            "basil",
+            "basils"
+          ]
+        },
+        {
+          "canonicalForm": "Beef",
+          "list": [
+            "beef",
+            "ground beef",
+            "meat",
+            "hamburger"
+          ]
+        },
+        {
+          "canonicalForm": "Canadian Bacon",
+          "list": [
+            "canadian bacon",
+            "canada bacon"
+          ]
+        },
+        {
+          "canonicalForm": "Cheese",
+          "list": [
+            "cheeses",
+            "cheese"
+          ]
+        },
+        {
+          "canonicalForm": "Chicken",
+          "list": [
+            "chicken",
+            "chickens",
+            "grilled chicken"
+          ]
+        },
+        {
+          "canonicalForm": "Eggplant",
+          "list": [
+            "eggplant",
+            "eggplants"
+          ]
+        },
+        {
+          "canonicalForm": "Garlic",
+          "list": [
+            "garlic",
+            "garlics"
+          ]
+        },
+        {
+          "canonicalForm": "Green Olive",
+          "list": [
+            "green olive",
+            "green olives"
+          ]
+        },
+        {
+          "canonicalForm": "Ham",
+          "list": [
+            "ham"
+          ]
+        },
+        {
+          "canonicalForm": "Jalapeno",
+          "list": [
+            "Jalapenos",
+            "jalapeno",
+            "jalapeno peppers",
+            "jalapeno pepper",
+            "spicy peppers"
+          ]
+        },
+        {
+          "canonicalForm": "Meatballs",
+          "list": [
+            "meatball",
+            "meatballs"
+          ]
+        },
+        {
+          "canonicalForm": "Mozzarella",
+          "list": [
+            "mozzarella",
+            "mozzarella cheese",
+            "mozzerella",
+            "mozzerella cheese",
+            "mozarela cheese",
+            "mozarela"
+          ]
+        },
+        {
+          "canonicalForm": "Mushroom",
+          "list": [
+            "Mushrooms",
+            "mushroom"
+          ]
+        },
+        {
+          "canonicalForm": "Olive",
+          "list": [
+            "olive",
+            "black olive",
+            "black olives",
+            "olives"
+          ]
+        },
+        {
+          "canonicalForm": "Oregano",
+          "list": [
+            "oregano",
+            "oreganos"
+          ]
+        },
+        {
+          "canonicalForm": "Parmesan Cheese",
+          "list": [
+            "parmesan cheese",
+            "parmisan cheese",
+            "parmesan"
+          ]
+        },
+        {
+          "canonicalForm": "Pepperoni",
+          "list": [
+            "pepperoni",
+            "pepperonis",
+            "peperoni"
+          ]
+        },
+        {
+          "canonicalForm": "Pesto",
+          "list": [
+            "pesto",
+            "pesto sauce"
+          ]
+        },
+        {
+          "canonicalForm": "Pineapple",
+          "list": [
+            "pineapple",
+            "pineapples"
+          ]
+        },
+        {
+          "canonicalForm": "Red Peppers",
+          "list": [
+            "red pepper",
+            "red peppers"
+          ]
+        },
+        {
+          "canonicalForm": "Salami",
+          "list": [
+            "salami",
+            "salamis"
+          ]
+        },
+        {
+          "canonicalForm": "Sauce",
+          "list": [
+            "sauce",
+            "red sauce",
+            "red sauces"
+          ]
+        },
+        {
+          "canonicalForm": "Sausage",
+          "list": [
+            "italian sausage",
+            "sausage",
+            "sausages"
+          ]
+        },
+        {
+          "canonicalForm": "Tomato",
+          "list": [
+            "tomato",
+            "tomatos",
+            "tomatoes"
+          ]
+        },
+        {
+          "canonicalForm": "Zuccini",
+          "list": [
+            "zuccinis",
+            "zuccini"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "number",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "a cheese pizza medium with some pineapple and chicken",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 0,
+          "endPos": 52
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 0,
+          "endPos": 52
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 22,
+          "endPos": 52
+        }
+      ]
+    },
+    {
+      "text": "add 5 party size marinera pizzas and i will pick them up at 6pm",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 0,
+          "endPos": 62
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 4,
+          "endPos": 31
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 17,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "can i get 3 pepperoni pizzas and a four cheese pizza with a large house salad and a large fries",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 10,
+          "endPos": 27
+        },
+        {
+          "entity": "Order",
+          "startPos": 10,
+          "endPos": 94
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 12,
+          "endPos": 27
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 33,
+          "endPos": 51
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 35,
+          "endPos": 51
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 53,
+          "endPos": 94
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 58,
+          "endPos": 76
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 66,
+          "endPos": 76
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 82,
+          "endPos": 94
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 90,
+          "endPos": 94
+        }
+      ]
+    },
+    {
+      "text": "can i get a large veggie pizza but can i get it without onions",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 10,
+          "endPos": 61
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 10,
+          "endPos": 61
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 18,
+          "endPos": 29
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 48,
+          "endPos": 61
+        }
+      ]
+    },
+    {
+      "text": "can i get a medium cheese pizza with sausage on half and chicken on the other half",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 10,
+          "endPos": 81
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 10,
+          "endPos": 81
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 19,
+          "endPos": 30
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 32,
+          "endPos": 51
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 57,
+          "endPos": 81
+        }
+      ]
+    },
+    {
+      "text": "can i get a medium pepperoni pizza with extra cheese and mushrooms plus some ranch dip for delivery paying cash",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 10,
+          "endPos": 65
+        },
+        {
+          "entity": "Order",
+          "startPos": 10,
+          "endPos": 110
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 19,
+          "endPos": 33
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 35,
+          "endPos": 65
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 67,
+          "endPos": 85
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 77,
+          "endPos": 85
+        }
+      ]
+    },
+    {
+      "text": "can i get a medium sausage pizza and fries delivered",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 10,
+          "endPos": 51
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 12,
+          "endPos": 31
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 19,
+          "endPos": 31
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 37,
+          "endPos": 41
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 37,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "can i get a pepperoni pizza and a can of coke please",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 10,
+          "endPos": 26
+        },
+        {
+          "entity": "Order",
+          "startPos": 10,
+          "endPos": 44
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 12,
+          "endPos": 26
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 32,
+          "endPos": 44
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 41,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "can i get a small pizza with onions peppers and olives",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 10,
+          "endPos": 53
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 10,
+          "endPos": 53
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 18,
+          "endPos": 22
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 24,
+          "endPos": 53
+        }
+      ]
+    },
+    {
+      "text": "can i get an extra large canadian pizza with half ground beef and half chicken",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 10,
+          "endPos": 77
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 10,
+          "endPos": 77
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 25,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "can i order 2 large canadian pizzas and can i add chicken on one of them please",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 12,
+          "endPos": 78
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 12,
+          "endPos": 78
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 20,
+          "endPos": 34
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 46,
+          "endPos": 71
+        }
+      ]
+    },
+    {
+      "text": "can i order a small cheese pizza and a small sausage and mushroom pizza",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 12,
+          "endPos": 31
+        },
+        {
+          "entity": "Order",
+          "startPos": 12,
+          "endPos": 70
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 20,
+          "endPos": 31
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 37,
+          "endPos": 70
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 45,
+          "endPos": 70
+        }
+      ]
+    },
+    {
+      "text": "can i please order a large meatlovers pizza but without ground beef please",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 18,
+          "endPos": 66
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 18,
+          "endPos": 66
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 27,
+          "endPos": 42
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 48,
+          "endPos": 66
+        }
+      ]
+    },
+    {
+      "text": "can i please place an order for an extra large hawaiian pizza including bacon pineapple and some cheddar cheese",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 32,
+          "endPos": 110
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 32,
+          "endPos": 110
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 47,
+          "endPos": 60
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 62,
+          "endPos": 110
+        }
+      ]
+    },
+    {
+      "text": "cancel",
+      "intent": "CancelOrder",
+      "entities": []
+    },
+    {
+      "text": "cancel it i dont want it anymore",
+      "intent": "CancelOrder",
+      "entities": []
+    },
+    {
+      "text": "cancel it please",
+      "intent": "CancelOrder",
+      "entities": []
+    },
+    {
+      "text": "cancel order",
+      "intent": "CancelOrder",
+      "entities": []
+    },
+    {
+      "text": "cancel that order",
+      "intent": "CancelOrder",
+      "entities": []
+    },
+    {
+      "text": "could i get a large sheet pizza and do half with pepperoni and the other just cheese",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 12,
+          "endPos": 83
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 12,
+          "endPos": 83
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 20,
+          "endPos": 30
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 36,
+          "endPos": 57
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 63,
+          "endPos": 83
+        }
+      ]
+    },
+    {
+      "text": "could i get a pepperoni pizza with salami instead and a ham and pineapple pizza with pepperoni instead of ham",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 12,
+          "endPos": 48
+        },
+        {
+          "entity": "Order",
+          "startPos": 12,
+          "endPos": 108
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 14,
+          "endPos": 28
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 35,
+          "endPos": 48
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 54,
+          "endPos": 78
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 54,
+          "endPos": 108
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 80,
+          "endPos": 93
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 95,
+          "endPos": 108
+        }
+      ]
+    },
+    {
+      "text": "could i get a pizza that's half pepperoni sausage and onion and the other half with just plain cheese",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 12,
+          "endPos": 100
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 12,
+          "endPos": 100
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 14,
+          "endPos": 18
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 27,
+          "endPos": 58
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 64,
+          "endPos": 100
+        }
+      ]
+    },
+    {
+      "text": "delivery for a small pepperoni pizza with parsley and parmesan cheese plus a garlic dip paying cash",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 0,
+          "endPos": 98
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 13,
+          "endPos": 68
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 21,
+          "endPos": 35
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 37,
+          "endPos": 68
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 70,
+          "endPos": 86
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 77,
+          "endPos": 86
+        }
+      ]
+    },
+    {
+      "text": "delivery order for a large cheese pizza with ham and olives and a side of cheese dip",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 0,
+          "endPos": 83
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 19,
+          "endPos": 58
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 27,
+          "endPos": 38
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 40,
+          "endPos": 58
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 64,
+          "endPos": 83
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 74,
+          "endPos": 83
+        }
+      ]
+    },
+    {
+      "text": "do it",
+      "intent": "Confirmation",
+      "entities": []
+    },
+    {
+      "text": "dont want the order anymore",
+      "intent": "CancelOrder",
+      "entities": []
+    },
+    {
+      "text": "get me a bbq pizza without cheese and an extra large pepperoni pizza with peppers olives and ham and a salad on the side",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 6,
+          "endPos": 119
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 32
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 9,
+          "endPos": 17
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 19,
+          "endPos": 32
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 38,
+          "endPos": 95
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 53,
+          "endPos": 67
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 69,
+          "endPos": 95
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 101,
+          "endPos": 119
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 103,
+          "endPos": 107
+        }
+      ]
+    },
+    {
+      "text": "get me a cheddar cheese pizza large with extra anchovies",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 55
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 55
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 9,
+          "endPos": 28
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 36,
+          "endPos": 55
+        }
+      ]
+    },
+    {
+      "text": "get me a large napoli pizza and add extra anchovies remove the cheese",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 68
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 68
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 26
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 32,
+          "endPos": 50
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 52,
+          "endPos": 68
+        }
+      ]
+    },
+    {
+      "text": "get me a medium hand tossed pizza with mushrooms on half of it and pepperoni on the other half",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 93
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 93
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 16,
+          "endPos": 32
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 34,
+          "endPos": 61
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 67,
+          "endPos": 93
+        }
+      ]
+    },
+    {
+      "text": "get me a pepperoni pizza without pepperoni please",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 41
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 42
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 9,
+          "endPos": 23
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 25,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "get me one monaco pizza but hold the ham",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 39
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 39
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 11,
+          "endPos": 22
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 28,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "give me a white castle pizza without any peppers",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 8,
+          "endPos": 47
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 8,
+          "endPos": 47
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 10,
+          "endPos": 27
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 29,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "hello",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "hello i would like to order a large hawaiian pizza with extra cheese black olives and extra pepperoni",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 28,
+          "endPos": 100
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 28,
+          "endPos": 100
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 36,
+          "endPos": 49
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 51,
+          "endPos": 100
+        }
+      ]
+    },
+    {
+      "text": "hello i'd like to order 6 medium pizzas for our office party two canadian two veggie and two meatlovers",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 24,
+          "endPos": 38
+        },
+        {
+          "entity": "Order",
+          "startPos": 24,
+          "endPos": 102
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 33,
+          "endPos": 38
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 61,
+          "endPos": 72
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 65,
+          "endPos": 72
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 74,
+          "endPos": 83
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 78,
+          "endPos": 83
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 89,
+          "endPos": 102
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 93,
+          "endPos": 102
+        }
+      ]
+    },
+    {
+      "text": "hey",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "hey can i get a small pizza with pepperoni and extra cheese",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 14,
+          "endPos": 58
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 14,
+          "endPos": 58
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 22,
+          "endPos": 26
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 28,
+          "endPos": 58
+        }
+      ]
+    },
+    {
+      "text": "hey i want to order a large supreme pizza add cheese no onions plus a large pepperoni pizza with sausage",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 20,
+          "endPos": 61
+        },
+        {
+          "entity": "Order",
+          "startPos": 20,
+          "endPos": 103
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 28,
+          "endPos": 40
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 42,
+          "endPos": 51
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 53,
+          "endPos": 61
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 68,
+          "endPos": 103
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 76,
+          "endPos": 90
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 92,
+          "endPos": 103
+        }
+      ]
+    },
+    {
+      "text": "hey there",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "hi can i order a large pizza with pepperoni bacon and extra chicken",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 15,
+          "endPos": 66
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 15,
+          "endPos": 66
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 23,
+          "endPos": 27
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 29,
+          "endPos": 66
+        }
+      ]
+    },
+    {
+      "text": "hi dear team i would order a medium margherita pizza add extra pepper ham and ranch",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 27,
+          "endPos": 82
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 27,
+          "endPos": 82
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 36,
+          "endPos": 51
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 53,
+          "endPos": 82
+        }
+      ]
+    },
+    {
+      "text": "hi i need to place an order for a large cheese pizza with extra cheese and mushrooms and bacon toppings",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 32,
+          "endPos": 102
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 32,
+          "endPos": 102
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 40,
+          "endPos": 51
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 53,
+          "endPos": 93
+        }
+      ]
+    },
+    {
+      "text": "hi i want a medium veggie pizza with bacon added to one side and the other half add chicken",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 10,
+          "endPos": 90
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 10,
+          "endPos": 90
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 19,
+          "endPos": 30
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 32,
+          "endPos": 59
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 65,
+          "endPos": 90
+        }
+      ]
+    },
+    {
+      "text": "hi we want a large seafood pizza one half no mushrooms one half extra onions",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 11,
+          "endPos": 75
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 11,
+          "endPos": 75
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 19,
+          "endPos": 31
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 33,
+          "endPos": 53
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 55,
+          "endPos": 75
+        }
+      ]
+    },
+    {
+      "text": "how are you",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "i need 2 large cheese pizzas 6 large pepperoni pizzas and 1 large supreme pizza",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 27
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 78
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 27
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 29,
+          "endPos": 52
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 37,
+          "endPos": 52
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 58,
+          "endPos": 78
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 66,
+          "endPos": 78
+        }
+      ]
+    },
+    {
+      "text": "i need a chicken pizza without mushroom and a large pepperoni pizza extra anchovies and some bread sticks",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 38
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 104
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 9,
+          "endPos": 21
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 23,
+          "endPos": 38
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 44,
+          "endPos": 82
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 52,
+          "endPos": 66
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 68,
+          "endPos": 82
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 88,
+          "endPos": 104
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 93,
+          "endPos": 104
+        }
+      ]
+    },
+    {
+      "text": "i need a large ham pizza extra bacon and corn the payment will be in cash",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 44
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 72
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 23
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 25,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "i need a large meat lovers pizza with extra sausage cheese and bacon",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 67
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 67
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 31
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 33,
+          "endPos": 67
+        }
+      ]
+    },
+    {
+      "text": "i need a large pepperoni with bell peppers and black olives and a small grilled chicken with bacon",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 58
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 97
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 23
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 25,
+          "endPos": 58
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 64,
+          "endPos": 97
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 72,
+          "endPos": 86
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 88,
+          "endPos": 97
+        }
+      ]
+    },
+    {
+      "text": "i need a large pizza with alfredo sauce and one with cheddar cheese",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 38
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 66
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 19
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 21,
+          "endPos": 38
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 44,
+          "endPos": 66
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 48,
+          "endPos": 66
+        }
+      ]
+    },
+    {
+      "text": "i need a large pizza with alfredo sauce instead of the pizza sauce",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 65
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 65
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 19
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 21,
+          "endPos": 38
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 40,
+          "endPos": 65
+        }
+      ]
+    },
+    {
+      "text": "i need a large pizza with extra jalapenos one with half pineapples and one with light onions",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 91
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 91
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 19
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 21,
+          "endPos": 40
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 42,
+          "endPos": 65
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 75,
+          "endPos": 91
+        }
+      ]
+    },
+    {
+      "text": "i need a large pizza without ham add extra pineapple",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 51
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 51
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 19
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 21,
+          "endPos": 31
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 33,
+          "endPos": 51
+        }
+      ]
+    },
+    {
+      "text": "i need a large sausage and mushroom pizza and a large coke",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 40
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 57
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 40
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 46,
+          "endPos": 57
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 54,
+          "endPos": 57
+        }
+      ]
+    },
+    {
+      "text": "i need a medium cheese pizza add mushrooms and onions and one chicken pizza needs peppers and sausage",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 52
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 100
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 16,
+          "endPos": 27
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 29,
+          "endPos": 52
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 58,
+          "endPos": 100
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 62,
+          "endPos": 74
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 76,
+          "endPos": 100
+        }
+      ]
+    },
+    {
+      "text": "i need a medium thin crust pepperoni pizza with bacon and grilled onions with a side of cheesy bread sticks",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 71
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 106
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 27,
+          "endPos": 41
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 43,
+          "endPos": 71
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 73,
+          "endPos": 106
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 88,
+          "endPos": 106
+        }
+      ]
+    },
+    {
+      "text": "i need a pepperoni sausage and mushroom pizza and please leave off the cheese",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 76
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 76
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 40,
+          "endPos": 44
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 57,
+          "endPos": 76
+        }
+      ]
+    },
+    {
+      "text": "i need a pizza with half onion and pineapple and half sausage and jalapeno",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 73
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 73
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 9,
+          "endPos": 13
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 15,
+          "endPos": 43
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 49,
+          "endPos": 73
+        }
+      ]
+    },
+    {
+      "text": "i need a small cheese pizza and remove sauce but add extra cheese",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 64
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 64
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 26
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 32,
+          "endPos": 43
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 49,
+          "endPos": 64
+        }
+      ]
+    },
+    {
+      "text": "i need a small pizza with pineapples extra bacon and extra sauce",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 63
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 63
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 19
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 21,
+          "endPos": 63
+        }
+      ]
+    },
+    {
+      "text": "i need five pizzas with pepperoni onions green peppers and green olives on one of them",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 85
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 85
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 12,
+          "endPos": 17
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 19,
+          "endPos": 53
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 59,
+          "endPos": 85
+        }
+      ]
+    },
+    {
+      "text": "i need to order a medium vegetarian pizza with artichokes and broccoli and a small cheese pizza with mozzarella cheese",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 16,
+          "endPos": 69
+        },
+        {
+          "entity": "Order",
+          "startPos": 16,
+          "endPos": 117
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 25,
+          "endPos": 40
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 42,
+          "endPos": 69
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 75,
+          "endPos": 117
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 83,
+          "endPos": 94
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 96,
+          "endPos": 117
+        }
+      ]
+    },
+    {
+      "text": "i need to order one large plain cheese pizza a small pepperoni pizza bread sticks and onion rings",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 16,
+          "endPos": 43
+        },
+        {
+          "entity": "Order",
+          "startPos": 16,
+          "endPos": 96
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 26,
+          "endPos": 43
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 45,
+          "endPos": 67
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 53,
+          "endPos": 67
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 69,
+          "endPos": 80
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 69,
+          "endPos": 96
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 86,
+          "endPos": 96
+        }
+      ]
+    },
+    {
+      "text": "i need twelve large pizzas with various toppings for a business meeting at noon",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 47
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 47
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 20,
+          "endPos": 25
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 27,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "i need two pizzas first is a small pepperoni with onions and mushrooms next is a medium sausage with anchovies",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 16
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 109
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 27,
+          "endPos": 69
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 35,
+          "endPos": 43
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 45,
+          "endPos": 69
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 79,
+          "endPos": 109
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 81,
+          "endPos": 94
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 96,
+          "endPos": 109
+        }
+      ]
+    },
+    {
+      "text": "i wanna order one chicken ranch pizza and hold the pineapple please",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 14,
+          "endPos": 59
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 14,
+          "endPos": 59
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 18,
+          "endPos": 36
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 42,
+          "endPos": 59
+        }
+      ]
+    },
+    {
+      "text": "i want a large hawaiian pizza extra pineapple and ham deliver it and i'll pay with card",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 52
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 86
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 28
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 30,
+          "endPos": 52
+        }
+      ]
+    },
+    {
+      "text": "i want a large italian pizza hold the sausage and a cheese pizza with extra mushroom",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 44
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 83
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 27
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 29,
+          "endPos": 44
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 50,
+          "endPos": 83
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 52,
+          "endPos": 63
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 65,
+          "endPos": 83
+        }
+      ]
+    },
+    {
+      "text": "i want a large meat lover's pizza with ham and sausage with garlic sticks on the side",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 53
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 84
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 32
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 34,
+          "endPos": 53
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 55,
+          "endPos": 84
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 60,
+          "endPos": 72
+        }
+      ]
+    },
+    {
+      "text": "i want a large pepperoni pizza with extra mushrooms beef stuffed crust with ranch sauce without onions and a side of bread sticks",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 101
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 128
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 29
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 31,
+          "endPos": 50
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 71,
+          "endPos": 86
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 88,
+          "endPos": 101
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 107,
+          "endPos": 128
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 117,
+          "endPos": 128
+        }
+      ]
+    },
+    {
+      "text": "i want a large veggie pizza with white sauce instead of red i want olives on one side no pineapple",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 97
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 97
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 26
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 28,
+          "endPos": 43
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 45,
+          "endPos": 58
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 67,
+          "endPos": 84
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 86,
+          "endPos": 97
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 86,
+          "endPos": 97
+        }
+      ]
+    },
+    {
+      "text": "i want a meat lovers pizza with extra bacon and also extra mushrooms",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 67
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 67
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 9,
+          "endPos": 25
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 27,
+          "endPos": 67
+        }
+      ]
+    },
+    {
+      "text": "i want a medium cheese pizza with onions a small pizza with olives and a large pizza with mushrooms",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 39
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 98
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 16,
+          "endPos": 27
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 23,
+          "endPos": 27
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 23,
+          "endPos": 27
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 29,
+          "endPos": 39
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 41,
+          "endPos": 65
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 55,
+          "endPos": 65
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 71,
+          "endPos": 98
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 85,
+          "endPos": 98
+        }
+      ]
+    },
+    {
+      "text": "i want a medium hawaiian pizza with pineapple canadian bacon and extra cheese",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 76
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 76
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 16,
+          "endPos": 29
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 31,
+          "endPos": 76
+        }
+      ]
+    },
+    {
+      "text": "i want a pepperoni large with extra anchovies but remove cheese olives and mushroom",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 82
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 82
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 25,
+          "endPos": 44
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 50,
+          "endPos": 82
+        }
+      ]
+    },
+    {
+      "text": "i want a pepperoni pizza with extra pepperoni and extra cheese",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 61
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 61
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 9,
+          "endPos": 23
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 25,
+          "endPos": 61
+        }
+      ]
+    },
+    {
+      "text": "i want a pepperoni pizza without cheese",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 38
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 38
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 9,
+          "endPos": 23
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 25,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "i want a supreme pizza but i do not want the sausage on it",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 57
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 57
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 9,
+          "endPos": 21
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 32,
+          "endPos": 51
+        }
+      ]
+    },
+    {
+      "text": "i want one hawaiian pizza with extra pineapple and one supreme pizza hold the sausage",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 45
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 84
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 11,
+          "endPos": 24
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 26,
+          "endPos": 45
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 50,
+          "endPos": 84
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 55,
+          "endPos": 67
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 69,
+          "endPos": 84
+        }
+      ]
+    },
+    {
+      "text": "i want one large chicken ranch pizza with extra muhsroom but without ham and garlic knots on the side",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 71
+        },
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 100
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 17,
+          "endPos": 35
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 37,
+          "endPos": 55
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 61,
+          "endPos": 71
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 77,
+          "endPos": 88
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 77,
+          "endPos": 100
+        }
+      ]
+    },
+    {
+      "text": "i want one napolitano pizza small without olives",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 7,
+          "endPos": 47
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 7,
+          "endPos": 47
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 11,
+          "endPos": 26
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 34,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "i want to get a large supreme pizza extra onion and bacon with garlic knots for the side",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 14,
+          "endPos": 56
+        },
+        {
+          "entity": "Order",
+          "startPos": 14,
+          "endPos": 87
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 22,
+          "endPos": 34
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 36,
+          "endPos": 56
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 58,
+          "endPos": 87
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 63,
+          "endPos": 74
+        }
+      ]
+    },
+    {
+      "text": "i want to order a large clam pizza extra white sauce and a side order of garlic knots to go",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 16,
+          "endPos": 51
+        },
+        {
+          "entity": "Order",
+          "startPos": 16,
+          "endPos": 90
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 24,
+          "endPos": 33
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 35,
+          "endPos": 51
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 57,
+          "endPos": 84
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 73,
+          "endPos": 84
+        }
+      ]
+    },
+    {
+      "text": "i want to order a large vegetarian pizza but with the red onions removed and replaced with chilli flakes",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 16,
+          "endPos": 103
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 16,
+          "endPos": 103
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 24,
+          "endPos": 39
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 45,
+          "endPos": 71
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 77,
+          "endPos": 103
+        }
+      ]
+    },
+    {
+      "text": "i want to order a medium cheese pizza and a root beer",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 16,
+          "endPos": 36
+        },
+        {
+          "entity": "Order",
+          "startPos": 16,
+          "endPos": 52
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 25,
+          "endPos": 36
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 42,
+          "endPos": 52
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 44,
+          "endPos": 52
+        }
+      ]
+    },
+    {
+      "text": "i want to order a medium taco pizza with lettuce on half and tomatoes on half",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 16,
+          "endPos": 76
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 16,
+          "endPos": 76
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 25,
+          "endPos": 34
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 36,
+          "endPos": 55
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 61,
+          "endPos": 76
+        }
+      ]
+    },
+    {
+      "text": "i want to order a pizza with olives on one half and green peppers on the other half",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 16,
+          "endPos": 82
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 16,
+          "endPos": 82
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 18,
+          "endPos": 22
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 24,
+          "endPos": 46
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 52,
+          "endPos": 82
+        }
+      ]
+    },
+    {
+      "text": "i want to order a small ground beef pizza with onions and add an order of bread sticks",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 16,
+          "endPos": 52
+        },
+        {
+          "entity": "Order",
+          "startPos": 16,
+          "endPos": 85
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 24,
+          "endPos": 40
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 42,
+          "endPos": 52
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 58,
+          "endPos": 85
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 74,
+          "endPos": 85
+        }
+      ]
+    },
+    {
+      "text": "i want to order an individual pizza with salami and extra mushrooms replace paprika with corn",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 16,
+          "endPos": 92
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 16,
+          "endPos": 92
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 30,
+          "endPos": 34
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 36,
+          "endPos": 66
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 68,
+          "endPos": 82
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 84,
+          "endPos": 92
+        }
+      ]
+    },
+    {
+      "text": "i want to order one large supreme pizza with extra cheese and green peppers and a side order of breadsticks",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 16,
+          "endPos": 74
+        },
+        {
+          "entity": "Order",
+          "startPos": 16,
+          "endPos": 106
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 26,
+          "endPos": 38
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 40,
+          "endPos": 74
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 80,
+          "endPos": 106
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 96,
+          "endPos": 106
+        }
+      ]
+    },
+    {
+      "text": "i want to order the supreme meat pizza but without the sausage please",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 16,
+          "endPos": 61
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 16,
+          "endPos": 61
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 20,
+          "endPos": 37
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 43,
+          "endPos": 61
+        }
+      ]
+    },
+    {
+      "text": "i would like a hawaiian pizza with peppers instead of ham and the pesto pizza with spinach instead of chicken",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 13,
+          "endPos": 56
+        },
+        {
+          "entity": "Order",
+          "startPos": 13,
+          "endPos": 108
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 15,
+          "endPos": 28
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 30,
+          "endPos": 41
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 43,
+          "endPos": 56
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 62,
+          "endPos": 108
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 66,
+          "endPos": 76
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 78,
+          "endPos": 89
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 91,
+          "endPos": 108
+        }
+      ]
+    },
+    {
+      "text": "i would like a large mushroom pizza extra onions and bacon and a small pepsi to go",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 13,
+          "endPos": 57
+        },
+        {
+          "entity": "Order",
+          "startPos": 13,
+          "endPos": 81
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 21,
+          "endPos": 34
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 36,
+          "endPos": 57
+        },
+        {
+          "entity": "SideOrder",
+          "startPos": 63,
+          "endPos": 75
+        },
+        {
+          "entity": "SideProduct",
+          "startPos": 71,
+          "endPos": 75
+        }
+      ]
+    },
+    {
+      "text": "i would like a large vegetarian pizza half onions half peppers",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 13,
+          "endPos": 61
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 13,
+          "endPos": 61
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 21,
+          "endPos": 36
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 38,
+          "endPos": 48
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 50,
+          "endPos": 61
+        }
+      ]
+    },
+    {
+      "text": "id like to order a large bbq pizza with anchovies and olives",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "Order",
+          "startPos": 17,
+          "endPos": 59
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 17,
+          "endPos": 59
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 25,
+          "endPos": 33
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 35,
+          "endPos": 59
+        }
+      ]
+    },
+    {
+      "text": "one large cheese pizza without anchovies add olives and one chicken pizza and hold the peppers and jalapenos",
+      "intent": "ModifyOrder",
+      "entities": [
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 0,
+          "endPos": 50
+        },
+        {
+          "entity": "Order",
+          "startPos": 0,
+          "endPos": 107
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 10,
+          "endPos": 21
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 23,
+          "endPos": 39
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 41,
+          "endPos": 50
+        },
+        {
+          "entity": "FullPizzaWithModifiers",
+          "startPos": 56,
+          "endPos": 107
+        },
+        {
+          "entity": "PizzaType",
+          "startPos": 60,
+          "endPos": 72
+        },
+        {
+          "entity": "ToppingModifiers",
+          "startPos": 78,
+          "endPos": 107
+        }
+      ]
+    }
+  ],
+  "settings": []
+}
