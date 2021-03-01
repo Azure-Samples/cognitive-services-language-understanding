@@ -9,7 +9,7 @@
 # NON-WINDOWS
 # $ docker run -it --rm --name luis-endpoint-csharpcore luis-endpoint-csharpcore tail 
 
-FROM microsoft/dotnet:latest
+FROM mcr.microsoft.com/dotnet/runtime:latest
 WORKDIR /app
 COPY . /app
 
