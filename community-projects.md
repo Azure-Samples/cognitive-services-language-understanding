@@ -11,10 +11,10 @@ If you find a open-source project or sample using LUIS, please let us know.
 
 ## Java
 
-## Javascript (client-side frameworks)
+## JavaScript (client-side frameworks)
 
 ## Nodejs
-* [LUIS cli](https://github.com/Telefonica/luis-cli) - Typescript
+* [LUIS cli](https://github.com/Telefonica/luis-cli) - TypeScript
 * [Shopping bot](https://github.com/matthewshim-ms/ShoppingCartBot)
 * [Botframework handling smalltalk with LUIS and QnA-Maker](https://github.com/alyssaong1/botframework-smalltalk)
 
